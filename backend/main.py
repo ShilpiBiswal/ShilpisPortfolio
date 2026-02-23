@@ -104,8 +104,15 @@ def call_openrouter(prompt: str):
         headers=headers,
         json=payload
     )
-    return response.json()["choices"][0]["message"]["content"]
-
+    data = response.json()
+    
+    # Log the full response so we can see the error
+    print("OpenRouter response:", data)
+    
+    if "choices" not in data:
+        raise Exception(f"OpenRouter error: {data}")
+    
+    return data["choices"][0]["message"]["content"]
 
 
 
