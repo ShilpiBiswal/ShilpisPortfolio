@@ -8,6 +8,9 @@ import requests
 from pathlib import Path
 from dotenv import load_dotenv
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import os
 
 load_dotenv()
 
@@ -100,6 +103,9 @@ def call_openrouter(prompt: str):
     return response.json()["choices"][0]["message"]["content"]
 
 
+
+
+
 @app.get("/")
 def root():
     return {"status": "Backend is running"}
@@ -186,3 +192,6 @@ def all_messages():
             """
         ).fetchall()
     return [dict(row) for row in rows]
+
+if os.path.exists("frontend/build"):
+    app.mount("/", StaticFiles(directory="frontend/build", html=True), name="static")
