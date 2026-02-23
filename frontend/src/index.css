@@ -26,6 +26,14 @@
   background-size: 300% 300%;
   animation: gradientMove 18s ease infinite;
 }
+
+@media (max-width: 768px) {
+  .animated-bg {
+    background-size: 200% 200%;
+    animation-duration: 25s;
+  }
+}
+
 @keyframes glitterMove {
   0% {
     background-position: 0% 0%;
@@ -47,11 +55,25 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+@media (max-width: 480px) {
+  .glitter-text {
+    background-size: 150%;
+  }
+}
+
 .glitter-nav {
   background-image: url('https://thumb.photo-ac.com/88/8842a6af2a959e624e86782a4f8824bd_t.jpeg');
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 640px) {
+  .glitter-nav {
+    background-position: top;
+  }
+}
+
 
 
 
