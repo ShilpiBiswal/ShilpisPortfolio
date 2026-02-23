@@ -17,7 +17,10 @@ load_dotenv()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://splendid-healing-production.up.railway.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -193,5 +196,5 @@ def all_messages():
         ).fetchall()
     return [dict(row) for row in rows]
 
-if os.path.exists("frontend/build"):
-    app.mount("/", StaticFiles(directory="frontend/build", html=True), name="static")
+if os.path.exists("static"):
+    app.mount("/", StaticFiles(directory="static", html=True), name="static")
