@@ -90,7 +90,9 @@ If the resume does not contain enough information to answer confidently, reply e
 def call_openrouter(prompt: str):
     headers = {
         "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://splendid-healing-production.up.railway.app",
+        "X-Title": "Splendid Healing"
     }
     payload = {
         "model": "mistralai/mistral-7b-instruct",
