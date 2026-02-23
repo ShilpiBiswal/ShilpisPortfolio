@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-bg {
+  background: linear-gradient(
+    120deg,
+    #0f172a,
+    #020617,
+    #1e293b,
+    #020617
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 18s ease infinite;
+}
+@keyframes glitterMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+@keyframes glitter {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+.glitter-text {
+  background: url('https://i.pinimg.com/originals/15/54/d0/1554d0525aedd988ae25e6b9d7ee3777.gif');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.glitter-nav {
+  background-image: url('https://thumb.photo-ac.com/88/8842a6af2a959e624e86782a4f8824bd_t.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
