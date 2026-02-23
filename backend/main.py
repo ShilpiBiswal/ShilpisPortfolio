@@ -69,7 +69,8 @@ class MessageIn(BaseModel):
 
 
 def load_resume():
-    with open("resume.json", "r", encoding="utf-8") as f:
+    resume_path = Path(__file__).parent / "resume.json"
+    with open(resume_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 SYSTEM_PROMPT = """
