@@ -1,0 +1,105 @@
+{
+  "name": "Shilpi Biswal",
+  "location": "Navi Mumbai, Maharashtra, India",
+  "contact": {
+    "phone": "8591908224",
+    "email": "biswalshilpi@gmail.com"
+  },
+  "professional_summary": [
+    "Computer Science Engineering student with hands-on experience in software development through academic projects and personal initiatives.",
+    "Proven ability to work effectively within teams and manage projects to successful completion.",
+    "Seeking opportunities to apply technical skills in software development and contribute to innovative, impactful projects."
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science Engineering",
+      "institution": "Symbiosis Institute of Technology, Pune",
+      "graduation_year": 2026
+    }
+  ],
+  "experience": [
+    {
+      "organization": "ISKCON NVCC Pune",
+      "role": "Volunteer Mobile App Developer",
+      "duration": "July 2024 – October 2024",
+      "details": [
+        "Developed a guided meditation application providing daily spiritual readings for devotees.",
+        "Built the application using Flutter to ensure a seamless and user-friendly experience.",
+        "Collaborated with stakeholders to design UI and implement features for enhanced engagement."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Company Expense Management System",
+      "year": 2024,
+      "technologies": ["Java", "MySQL", "HTML", "CSS", "JavaScript"],
+      "description": [
+        "Developed a web application for company expense tracking and management.",
+        "Implemented receipt generation, employee management, project status tracking, and expense monitoring."
+      ]
+    },
+    {
+      "title": "Literary Retail Platform",
+      "year": 2024,
+      "technologies": ["MongoDB", "Express", "React", "Node.js"],
+      "description": [
+        "Built a MERN-based platform for book browsing, buying, and selling.",
+        "Implemented an AI-powered chatbot for personalized book recommendations and user assistance.",
+        "Designed a recommendation system using database insights and trend analysis."
+      ]
+    },
+    {
+      "title": "ATS Resume Analyzer & Job Search",
+      "year": 2025,
+      "technologies": ["Python", "Streamlit", "APIs"],
+      "description": [
+        "Developed an AI-powered resume evaluation and job matching system.",
+        "Integrated Google Gemini and JSearch APIs for live job search and salary estimation.",
+        "Implemented ATS compatibility scoring, skill gap analysis, and personalized improvement suggestions."
+      ]
+    },
+    {
+      "title": "MindPop – Gamified Learning Platform",
+      "year": 2025,
+      "technologies": ["MongoDB", "Web Technologies"],
+      "description": [
+        "Developed a gamified learning platform for neurodivergent children with ADHD.",
+        "Implemented cognitive games such as Seguin Board, Jigsaw, and TappyType.",
+        "Used MongoDB for progress tracking and data analysis for medical professionals."
+      ]
+    }
+  ],
+  "technical_skills": [
+    "Java",
+    "C++",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Operating Systems",
+    "Networking Basics",
+    "MySQL"
+  ],
+  "soft_skills": [
+    "Critical Thinking",
+    "Adaptability",
+    "Time Management",
+    "Teamwork and Collaboration",
+    "Attention to Detail",
+    "Problem Solving",
+    "Written and Spoken Communication"
+  ],
+  "certifications": [
+    {
+      "title": "The Complete 2024 Web Development Bootcamp",
+      "provider": "Udemy",
+      "instructor": "Dr. Angela Yu"
+    },
+    {
+      "title": "Operating System",
+      "provider": "Udemy",
+      "organization": "Edutainer India"
+    }
+  ]
+}
