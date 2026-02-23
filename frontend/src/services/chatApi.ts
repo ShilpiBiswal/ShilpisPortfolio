@@ -1,4 +1,7 @@
-const BASE = "http://127.0.0.1:8000";
+const BASE =
+  process.env.NODE_ENV === "production"
+    ? "https://splendid-healing-production.up.railway.app"
+    : "http://127.0.0.1:8000";
 
 
 export async function sendMessage(question: string) {
