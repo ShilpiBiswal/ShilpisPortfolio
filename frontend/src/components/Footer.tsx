@@ -12,6 +12,7 @@ const Footer = () => {
             <a
               href="https://github.com/ShilpiBiswal"
               target="_blank"
+              rel="noreferrer"
               className="w-11 h-11 rounded-full border border-gray-500 flex items-center justify-center hover:bg-white hover:text-black transition"
             >
               <Github size={20} />
@@ -20,6 +21,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/shilpi-biswal-83b971318/"
               target="_blank"
+              rel="noreferrer" 
               className="w-11 h-11 rounded-full border border-gray-500 flex items-center justify-center hover:bg-white hover:text-black transition"
             >
               <Linkedin size={20} />
