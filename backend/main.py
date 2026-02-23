@@ -109,9 +109,9 @@ def call_openrouter(prompt: str):
 
 
 
-@app.get("/")
-def root():
-    return {"status": "Backend is running"}
+# @app.get("/")
+# def root():
+#     return {"status": "Backend is running"}
 
 @app.post("/chat")
 def chat(req: ChatRequest):
@@ -196,5 +196,6 @@ def all_messages():
         ).fetchall()
     return [dict(row) for row in rows]
 
-if os.path.exists("static"):
-    app.mount("/", StaticFiles(directory="static", html=True), name="static")
+static_dir = Path(__file__).parent / "static"
+if static_dir.exists():
+    app.mount("/", StaticFiles(directory=str(static_dir), html=True), name="static")
